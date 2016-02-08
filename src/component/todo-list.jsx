@@ -15,6 +15,8 @@ class ListItem extends React.Component {
 };
 class TodoList extends React.Component {
   constructor(props) {
+    super(props);
+    this.state = TodoListStore.getState();
   }
   render() {
   }
