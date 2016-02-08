@@ -48,6 +48,10 @@ class TodoList extends React.Component {
     this.setState(state);
   }
 
+  onAddItem() {
+    TodoListActions.addItem(this.state.tempText);
+  }
+
   render() {
   }
 };
