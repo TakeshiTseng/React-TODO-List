@@ -8,6 +8,7 @@ import '../assets/stylesheets/todo-list.css';
 class ListItem extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {checked: props.checked, text: props.text, itemId: props.itemId};
   }
   render() {
   }
