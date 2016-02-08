@@ -10,6 +10,10 @@ class ListItem extends React.Component {
     super(props);
     this.state = {checked: props.checked, text: props.text, itemId: props.itemId};
   }
+  _onChecked() {
+    const itemId = this.state.itemId;
+    TodoListActions.checkItem(itemId);
+  }
   render() {
   }
 };
