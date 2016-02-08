@@ -14,6 +14,14 @@ class TodoListStore {
   }
 
   handleAddItem(text) {
+    var lastItemId = 1;
+    if(this.items.length > 0) {
+      let lastItem = this.items[this.items.length - 1];
+      lastItemId = lastItem.itemId;
+    }
+
+    this.items.push({text: text, checked: false, itemId: lastItemId + 1});
+    this.tempText = '';
   }
 
   handleCheckItem(itemId) {
