@@ -17,6 +17,12 @@ class TodoListStore {
   }
 
   handleCheckItem(itemId) {
+    this.items.map((i) => {
+      if(i.itemId == itemId) {
+        i.checked = !i.checked;
+      }
+    });
+
   }
 }
 
