@@ -18,11 +18,18 @@ class ListItem extends React.Component {
   }
 
   render() {
+    if(this.props.checked) {
+      return (<li onClick={this._onChecked} className='list-item'>
+        <a href="#"><s>{this.props.text}</s> (Done !)</a>
+      </li>);
+    } else {
       return (<li className='list-item' onClick={this._onChecked}>
         <a href="#">{this.props.text}</a>
       </li>);
+    }
   }
 };
+
 class TodoList extends React.Component {
   constructor(props) {
     super(props);
