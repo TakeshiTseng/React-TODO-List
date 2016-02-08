@@ -18,6 +18,9 @@ class ListItem extends React.Component {
   }
 
   render() {
+      return (<li className='list-item' onClick={this._onChecked}>
+        <a href="#">{this.props.text}</a>
+      </li>);
   }
 };
 class TodoList extends React.Component {
