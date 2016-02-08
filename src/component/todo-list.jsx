@@ -35,6 +35,8 @@ class TodoList extends React.Component {
     super(props);
     this.state = TodoListStore.getState();
     this.onStateChange = this.onStateChange.bind(this);
+    this.createListItem = this.createListItem.bind(this);
+    this.onTempTextChange = this.onTempTextChange.bind(this);
     this.onAddItem = this.onAddItem.bind(this);
   }
 
