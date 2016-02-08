@@ -50,6 +50,10 @@ class TodoList extends React.Component {
     this.setState(state);
   }
 
+  onTempTextChange(input) {
+    this.setState({tempText: input.target.value});
+  }
+
   onAddItem() {
     TodoListActions.addItem(this.state.tempText);
   }
