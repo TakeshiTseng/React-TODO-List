@@ -9,11 +9,14 @@ class ListItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {checked: props.checked, text: props.text, itemId: props.itemId};
+    this._onChecked = this._onChecked.bind(this);
   }
+
   _onChecked() {
     const itemId = this.state.itemId;
     TodoListActions.checkItem(itemId);
   }
+
   render() {
   }
 };
