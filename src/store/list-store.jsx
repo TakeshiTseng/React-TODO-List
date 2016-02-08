@@ -5,6 +5,10 @@ let alt = require('../alt');
 class TodoListStore {
   constructor() {
     this.items = [];
+  handleAddItem(text) {
+  }
+
+  handleCheckItem(itemId) {
   }
 }
 
