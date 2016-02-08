@@ -35,6 +35,19 @@ class TodoList extends React.Component {
     super(props);
     this.state = TodoListStore.getState();
   }
+
+  componentDidMount() {
+    TodoListStore.listen(this.onStateChange);
+  }
+
+  componentWillUnmount() {
+    TodoListStore.unlisten(this.onStateChange);
+  }
+
+  onStateChange(state) {
+    this.setState(state);
+  }
+
   render() {
   }
 };
