@@ -55,6 +55,9 @@ class TodoList extends React.Component {
   }
 
   render() {
+    return (<div className='todo-list-app'>
+      <h2>My TODO list</h2>
+    </div>);
   }
 };
 
