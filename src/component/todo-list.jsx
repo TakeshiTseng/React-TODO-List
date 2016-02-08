@@ -54,9 +54,16 @@ class TodoList extends React.Component {
     TodoListActions.addItem(this.state.tempText);
   }
 
+  createListItem(item) {
+    return (<ListItem key={item.text} text={item.text} checked={item.checked} itemId={item.itemId}></ListItem>);
+  }
+
   render() {
     return (<div className='todo-list-app'>
       <h2>My TODO list</h2>
+      <ul>
+        {this.state.items.map(this.createListItem)}
+      </ul>
     </div>);
   }
 };
