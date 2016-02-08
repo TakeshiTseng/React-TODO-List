@@ -1,0 +1,21 @@
+.todo-list-app {
+  padding: 10px;
+  margin: 10px;
+  /*width: 300px;*/
+}
+
+.list-item {
+  background-color: #ddd;
+  border-radius: 10;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.list-item a {
+  color: #000;
+  text-decoration:none;
+}
+
+.func-set {
+  margin: 10px 0px;
+}
