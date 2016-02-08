@@ -1,3 +1,9 @@
 React TODO list sample
 ====
-TODO list by React + Alt + React Router
+A TODO list made by React + Alt + React Router
+
+To use:
+```shell
+ $ npm install
+ $ npm start
+```
