@@ -64,6 +64,10 @@ class TodoList extends React.Component {
       <ul>
         {this.state.items.map(this.createListItem)}
       </ul>
+      <div className='func-set'>
+        <input value={this.state.tempText} onChange={this.onTempTextChange} type="text"></input>
+        <input value="Add Item" onClick={this.onAddItem} type="submit"></input>
+      </div>
     </div>);
   }
 };
